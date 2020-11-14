@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/main.css"/><link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="page home-page">
@@ -31,7 +32,23 @@
         </ul>
       </div>
       <div class="content-area">
-        <div class="header"><i class="fas fa-exchange-alt fa-1x toggle-sidebar"></i></div>
+        <div class="header"><i class="fas fa-exchange-alt fa-1x toggle-sidebar"></i>
+          <div class="dropdown notifications-container"><i class="fas fa-bell fa-lg toggle-notifications" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledby="notifications">
+              <div class="noti-head">Notifications<span>50</span></div>
+              <div class="noti-content">
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-envelope fa-lg"></i>You have got Mail</li>
+                  <li><i class="fas fa-money fa-lg"></i>You have got Money</li>
+                  <li><i class="fas fa-thumbs-up fa-lg"></i>You have got Liked</li>
+                  <li><i class="fas fa-envelope fa-lg"></i>You have got mail</li>
+                  <li><i class="fas fa-money fa-lg"></i>You have got Money</li>
+                </ul>
+              </div>
+              <div class="noti-foot text-center"><a href="#">View All Notifications</a></div>
+            </div>
+          </div>
+        </div>
         <div class="container-fluid">
           <div class="content">
             <div class="page-head">
