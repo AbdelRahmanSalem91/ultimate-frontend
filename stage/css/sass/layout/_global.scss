@@ -6,6 +6,18 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    &.open{
+        font-family: 'Open Sans', sans-serif;
+    }
+    &.roboto{
+        font-family: 'Roboto', sans-serif;
+    }
+    &.poppins{
+        font-family: 'Poppins', sans-serif;
+    }
+    &.source{
+        font-family: 'Source Sans Pro', sans-serif;
+    }
 }
 
 .page{

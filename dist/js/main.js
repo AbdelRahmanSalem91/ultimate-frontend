@@ -35,6 +35,16 @@ $(function(){
         $("body").removeClass(themesClasses.join(" "))
         .addClass($(this).data("theme"));
     })
+    // Switch Fot Family
+    var fontsClasses = [];
+    $(".font-option select option").each(function(){
+        fontsClasses.push($(this).val());
+    });
+    $(".font-option select").on('change', function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $("body").removeClass(fontsClasses.join(" "))
+        .addClass($(this).find("option:selected").val());
+    })
 });
 
 
