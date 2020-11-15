@@ -3,17 +3,22 @@
     padding: 20px;
     .toggle-sidebar{
         cursor: pointer;
+        font-size: 20px;
+        &:hover{
+            color: #2980b9;
+        }
     }
     .notifications-container {
         display: inline-block;
         margin-left: 20px;
         .header-icon {
             background-color: #f9f9f9;
-            padding: 10px;
+            padding: 15px 14px;
             border-radius: 50%;
             color: #555;
             cursor: pointer;
             margin-left: 10px;
+            margin-right: 10px;
         }
         .dropdown-menu {
             min-width: 600px;
@@ -103,6 +108,7 @@
             .user-info{
                 h3{
                     font-weight: bold;
+                    color: #2980b9;
                 }
                 p{
                     color: #888;

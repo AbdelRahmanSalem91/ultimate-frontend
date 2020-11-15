@@ -12,19 +12,25 @@
         font-weight: bold;
         color: #666;
         margin: 10px 0 15px;
+        font-size: 18px;
     }
     .toggle-settings{
         position: absolute;
         left: -55px;
         top: 100px;
-        background-color: #fff;
+        background-color: #2980b9;
         padding: 10px 15px;
         font-size: 22px;
         border-radius: 5px 0 0 5px;
         cursor: pointer;
+        color: #fff;
     }
     &.hide-settings{
         right: -250px;
+    }
+    .option-box{
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
     }
     .color-options{
         ul{
