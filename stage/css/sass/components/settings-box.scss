@@ -8,6 +8,7 @@
     z-index: 1000;
     padding: 20px;
     transition: .3s;
+    box-shadow: 0 0 20px #2980b9;
     .option-title{
         font-weight: bold;
         color: #666;
@@ -16,7 +17,7 @@
     }
     .toggle-settings{
         position: absolute;
-        left: -55px;
+        left: -59px;
         top: 100px;
         background-color: #2980b9;
         padding: 10px 15px;
@@ -24,6 +25,7 @@
         border-radius: 5px 0 0 5px;
         cursor: pointer;
         color: #fff;
+        box-shadow: 0 0 20px #2980b9;
     }
     &.hide-settings{
         right: -250px;

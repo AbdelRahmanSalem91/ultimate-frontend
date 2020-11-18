@@ -1,4 +1,5 @@
 .header{
+    position: relative;
     background-color: #fff;
     padding: 20px;
     .toggle-sidebar{
@@ -13,14 +14,25 @@
         margin-left: 20px;
         .header-icon {
             background-color: #f9f9f9;
-            padding: 15px 14px;
+            padding: 10px 9px;
             border-radius: 50%;
             color: #555;
             cursor: pointer;
             margin-left: 10px;
             margin-right: 10px;
         }
+        > span {
+            position: absolute;
+            background-color: #f44336;
+            color: #fff;
+            padding: 0px 5px;
+            border-radius: 50%;
+            top: -7px;
+            right: 5px;
+            font-size: 12px;
+        }
         .dropdown-menu {
+            position: relative;
             min-width: 600px;
             padding: 0;
             border: none;
@@ -74,68 +86,108 @@
             }
         }
     }
-    .usermenu-container{
+
+    .toggle-fullscreen{
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    h2{
+        font-weight: bold;
+        color: #2980b9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 5px 5px 7px #2980b9;
+    }
+
+    .right-side{
+        position: relative;
         float: right;
-        .username{
-            .avatar{
-                width: 40px;
-                height: 40px;
-                cursor: pointer;
-            }
-            .user{
-                font-weight: bold;
-                color: #777;
-                margin-right: 10px;
-                margin-left: 10px;
+        display: flex;
+        input{
+            margin-right: 50px;
+            border: none;
+            border-bottom: 1px solid #eee;
+            width: 200px;
+            height: 30px;
+            padding: 3px;
+            font-size: 14px;
+            &:focus{
+                outline: none;
             }
         }
-        .dropdown-menu {
-            min-width: 500px;
-            padding: 20px;
-            border: none;
-            box-shadow: 0 0 10px #ddd;
-            top: 10px !important;
-            border: 1px solid #ddd;
-            &:before{
-                content: '';
-                position: absolute;
-                top: -20px;
-                right: 0;
-                border-style: solid;
-                border-width: 10px;
-                border-color: transparent transparent #ddd transparent;
-            }
-            .user-info{
-                h3{
+        > i {
+            position: absolute;
+            left: 200px;
+            top: 1px;
+            padding: 6px 7px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .usermenu-container{
+            .username{
+                .avatar{
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                }
+                .user{
                     font-weight: bold;
-                    color: #2980b9;
-                }
-                p{
-                    color: #888;
+                    color: #777;
+                    margin-right: 10px;
+                    margin-left: 10px;
                 }
             }
-            .activities-list{
-                li{
-                    padding: 10px;
+            .dropdown-menu {
+                min-width: 500px;
+                padding: 20px;
+                border: none;
+                box-shadow: 0 0 10px #ddd;
+                top: 10px !important;
+                border: 1px solid #ddd;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: -20px;
+                    right: 0;
+                    border-style: solid;
+                    border-width: 10px;
+                    border-color: transparent transparent #ddd transparent;
                 }
-
-            }
-            .usermenu-links{
-                .link-box{
-                    background-color: #f3f3f3;
-                    padding: 10px;
-                    border-radius: 6px;
-                    font-weight: bold;
-                    i{
-                        margin-right: 10px;
-                        &.setting-icon{
-                            color: #2980b9;
-                        }
-                        &.profile-icon{
-                            color: #16a085;
-                        }
-                        &.logout-icon{
-                            color: #c0392b;
+                .user-info{
+                    h3{
+                        font-weight: bold;
+                        color: #2980b9;
+                    }
+                    p{
+                        color: #888;
+                    }
+                }
+                .activities-list{
+                    li{
+                        padding: 10px;
+                    }
+    
+                }
+                .usermenu-links{
+                    .link-box{
+                        background-color: #f3f3f3;
+                        padding: 10px;
+                        border-radius: 6px;
+                        font-weight: bold;
+                        i{
+                            margin-right: 10px;
+                            &.setting-icon{
+                                color: #2980b9;
+                            }
+                            &.profile-icon{
+                                color: #16a085;
+                            }
+                            &.logout-icon{
+                                color: #c0392b;
+                            }
                         }
                     }
                 }

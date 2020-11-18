@@ -1,0 +1,198 @@
+.section-one{
+    .dash-cards{
+        display: flex;
+        justify-content: space-around;
+        color: #777;
+        .my-card{
+            background: #fff;
+            border: none;
+            width: 450px;
+            height: 150px;
+            position: relative;
+            box-shadow: 5px 5px 7px #ddd;
+            .c-header{
+                border: none;
+                background-color: #fff;
+                padding: 0;
+                position: absolute;
+                top: -30px;
+                left: 20px;
+                border-radius: 5px;
+                overflow: hidden;
+                box-shadow: 5px 5px 7px #ddd;
+                text-align: center;
+                .card-icon{
+                    padding: 30px;
+                }
+            }
+            .c-body{
+                padding: 20px;
+                margin-top: 30px;
+                position: relative;
+                .card-text{
+                    position: absolute;
+                    top: -20px;
+                    right: 20px;
+                    > span{
+                        display: block;
+                        &:first-of-type{
+                            font-size: 14px;
+                        }
+                        &:last-of-type{
+                            font-size: 22px;
+                        }
+                        span{
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .c-footer{
+                font-size: 13px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.section-two{
+    margin-top: 100px;
+    .status-cards{
+        display: flex;
+        justify-content: space-around;
+        color: #666;
+        .states-cards{
+            width: 700px;
+            .state-header{
+                width: 95%;
+                margin: -10px auto 0;
+                border-radius: 5px;
+                box-shadow: 5px 5px 7px #ddd;
+            }
+            .state-body{
+                .state-title{
+                    font-size: 22px;
+                }
+                .state-text{
+                    font-size: 14px;
+                    color: #bbb;
+                }
+            }
+            .state-footer{
+                background-color: #fff;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.section-three{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    .tasks-section{
+        width: 1200px;
+        .states-cards{
+            position: relative;
+            .state-header{
+                position: absolute;
+                top: -15px;
+                left: 2.5%;
+                transform: translateY(-50%);
+                width: 95%;
+                margin: 0 auto;
+                background-color: #9F39B5;
+                padding: 25px;
+                border-radius: 5px;
+                box-shadow: 5px 5px 7px #ddd;
+                .tasks-list{
+                    margin: 0;
+                    li{
+                        display: inline-block;
+                        a{
+                            text-decoration: none;
+                            padding: 10px;
+                            transition: .3s;
+                            &:hover, &.active{
+                                background-color: rgba(255, 255, 255, .2);
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .state-body{
+                .check-list{
+                    li{
+                        position: relative;
+                        padding: 25px;
+                        &:not(:last-of-type){
+                            border-bottom: 1px solid #ccc;
+                        }
+                        input{
+                            position: absolute;
+                            top: 30%;
+                            width: 18px;
+                            height: 18px;
+                        }
+                        span{
+                            margin-left: 50px;
+                            font-size: 14px;
+                            span{
+                                cursor: pointer;
+                                i{
+                                    color: #9F39B5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .employees-section{
+        width: 1000px;
+        .states-cards{
+            position: relative;
+            padding: 40px;
+            .state-header{
+                position: absolute;
+                top: -15px;
+                left: 2.5%;
+                transform: translateY(-50%);
+                width: 95%;
+                margin: 0 auto;
+                border-radius: 5px;
+                box-shadow: 5px 5px 7px #ddd;
+            }
+            .state-body{
+                table{
+                    width: 100%;
+                    thead{
+                        tr{
+                            th{
+                                padding-bottom: 15px;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            &:hover{
+                                background-color: #eee;
+                            }
+                            td,th{
+                                padding: 15px 0;
+                                width: calc(100% / 4);
+                                border-top: 1px solid #ccc;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

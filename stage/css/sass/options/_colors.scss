@@ -1,9 +1,9 @@
 $themes: (
-    green-theme: (color: #27ae60),
+    green-theme: (color: #4caf50),
     blue-theme: (color: #2980b9),
-    red-theme: (color: #c0392b),
-    orange-theme: (color: #d35400),
-    purple-theme: (color: #8e44ad)
+    red-theme: (color: #f44336),
+    orange-theme: (color: #ff9800),
+    purple-theme: (color: #9F39B5)
 );
 
 @each $theme, $map in $themes {
@@ -12,14 +12,39 @@ $themes: (
         .page .page-head .page-title {
             color: $color;
         }
+        .page .sidebar{
+        box-shadow: 0 0 20px $color;
+        }
+        .page .sidebar .logo-area{
+            background-color: $color;
+        }
+        .page .sidebar .links-area>li>a:hover, 
+        .page .sidebar .links-area>li>a.active{
+            background-color: $color;
+        }
+        .page .sidebar .links-area .child-links a::before{
+            background-color: $color;
+        }
         .page .sidebar .links-area .child-links a:hover:before{
             background-color: $color;
+        }
+        .header .toggle-sidebar:hover{
+            color: $color;
         }
         .header .usermenu-container .dropdown-menu .user-info h3{
             color: $color;
         }
+        .settings-box{
+            box-shadow: 0 0 20px $color;
+        }
         .settings-box .toggle-settings{
             background-color: $color;
+            box-shadow: 0 0 20px $color;
+        }
+        .header h2{
+            color: $color;
+            text-shadow: 5px 5px 7px $color;
+            
         }
     }
 }

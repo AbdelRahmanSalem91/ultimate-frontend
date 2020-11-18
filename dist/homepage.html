@@ -62,9 +62,9 @@
       </div>
       <div class="content-area">
         <div class="header"><i class="fas fa-exchange-alt fa-1x toggle-sidebar"></i>
-          <div class="dropdown notifications-container"><i class="fas fa-bell fa-lg header-icon toggle-notifications" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+          <div class="dropdown notifications-container"><span>5</span><i class="fas fa-bell fa-lg header-icon toggle-notifications" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
             <div class="dropdown-menu" aria-labelledby="notifications">
-              <div class="noti-head">Notifications<span>50</span></div>
+              <div class="noti-head">Notifications<span>5</span></div>
               <div class="noti-content">
                 <ul class="list-unstyled">
                   <li><i class="fas fa-envelope fa-lg"></i>You have got Mail</li>
@@ -77,33 +77,37 @@
               <div class="noti-foot text-center"><a href="#">View All Notifications</a></div>
             </div>
           </div><i class="fas fa-expand fa-lg toggle-fullscreen header-icon"></i>
-          <div class="dropdown usermenu-container">
-            <div class="username" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar rounded-circle" src="../images/001-abdo.jpg" alt="abdo"/><span class="user">Abdel Rahman</span><i class="fas fa-angle-down fa-lg"></i></div>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
-              <div class="user-info">
-                <h3>Abdel Rahman</h3>
-                <p>premium Member</p>
-              </div>
-              <hr/>
-              <ul class="activities-list list-unstyled">
-                <li>Added a comment on post "Ho to a Make Dashboard"</li>
-                <hr/>
-                <li>Created a post on "Science" Category</li>
-                <hr/>
-                <li>Created a chart on charts page</li>
-                <hr/>
-                <li>Added a comment on "How to use GulpJs" Post</li>
-              </ul>
-              <hr/>
-              <div class="row usermenu-links">
-                <div class="col">
-                  <div class="link-box"><i class="fas fa-cog fa-lg fa-fw setting-icon"></i><span>Settings</span></div>
+          <h2 class="h1 text-center">Dashboard</h2>
+          <div class="right-side">
+            <input type="search" placeholder="Search"/><i class="fas fa-search"></i>
+            <div class="dropdown usermenu-container">
+              <div class="username" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar rounded-circle" src="../images/001-abdo.jpg" alt="abdo"/><span class="user">Abdel Rahman</span><i class="fas fa-angle-down fa-lg"></i></div>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                <div class="user-info">
+                  <h3>Abdel Rahman</h3>
+                  <p>Premium Member</p>
                 </div>
-                <div class="col">
-                  <div class="link-box"><i class="fas fa-user fa-lg fa-fw profile-icon"></i><span>Profile</span></div>
-                </div>
-                <div class="col">
-                  <div class="link-box"><i class="fas fa-power-off fa-lg fa-fw logout-icon"></i><span>Logout</span></div>
+                <hr/>
+                <ul class="activities-list list-unstyled">
+                  <li>Added a comment on post "Ho to a Make Dashboard"</li>
+                  <hr/>
+                  <li>Created a post on "Science" Category</li>
+                  <hr/>
+                  <li>Created a chart on charts page</li>
+                  <hr/>
+                  <li>Added a comment on "How to use GulpJs" Post</li>
+                </ul>
+                <hr/>
+                <div class="row usermenu-links">
+                  <div class="col">
+                    <div class="link-box"><i class="fas fa-cog fa-lg fa-fw setting-icon"></i><span>Settings</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="link-box"><i class="fas fa-user fa-lg fa-fw profile-icon"></i><span>Profile</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="link-box"><i class="fas fa-power-off fa-lg fa-fw logout-icon"></i><span>Logout</span></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -114,6 +118,151 @@
             <div class="page-head">
               <h1 class="page-title">Homepage</h1>
               <p class="page-description lead">This Is Discription of Homepage</p>
+            </div>
+            <div class="section-one">
+              <div class="dash-cards">
+                <div class="card my-card">
+                  <div class="card-header c-header"><i class="far fa-copy fa-2x card-icon bg-warning text-white"></i></div>
+                  <div class="card-body c-body">
+                    <div class="card-title"></div>
+                    <div class="card-text text-right"><span class="span-one">Used Space</span><span class="span-two">49/50 <span>GB</span></span></div>
+                  </div>
+                  <div class="card-footer c-footer"> <i class="fas fa-exclamation-triangle text-danger"></i>  Get More Space...</div>
+                </div>
+                <div class="card my-card">
+                  <div class="card-header c-header"><i class="fas fa-home fa-2x card-icon bg-success text-white"></i></div>
+                  <div class="card-body c-body">
+                    <div class="card-title"></div>
+                    <div class="card-text text-right"><span class="span-one">Revenue</span><span class="span-two">$34,245</span></div>
+                  </div>
+                  <div class="card-footer c-footer"> <i class="far fa-calendar-times"></i>  Last 24 Hours</div>
+                </div>
+                <div class="card my-card">
+                  <div class="card-header c-header"><i class="fas fa-info-circle fa-2x card-icon bg-danger text-white"></i></div>
+                  <div class="card-body c-body">
+                    <div class="card-title"></div>
+                    <div class="card-text text-right"><span class="span-one">Fixed Issues</span><span class="span-two">75</span></div>
+                  </div>
+                  <div class="card-footer c-footer"> <i class="fas fa-tag"></i>  Tracked from Github</div>
+                </div>
+                <div class="card my-card">
+                  <div class="card-header c-header"><i class="fab fa-twitter fa-2x card-icon bg-primary text-white"></i></div>
+                  <div class="card-body c-body">
+                    <div class="card-title"></div>
+                    <div class="card-text text-right"><span class="span-one">Followers</span><span class="span-two">+245</span></div>
+                  </div>
+                  <div class="card-footer c-footer"> <i class="fas fa-history"></i>  Just Updated</div>
+                </div>
+              </div>
+            </div>
+            <div class="section-two">
+              <div class="status-cards">
+                <div class="card states-cards">
+                  <div class="card-header state-header bg-success"></div>
+                  <div class="card-body state-body">
+                    <div class="card-title state-title">   Daily Sales</div>
+                    <div class="card-text state-text"><span class="text-success"><i class="fas fa-long-arrow-alt-up">55% </i></span>  increase in today sales.</div>
+                  </div>
+                  <div class="card-footer state-footer"><i class="far fa-clock"></i>   updated 4 minutes ago</div>
+                </div>
+                <div class="card states-cards">
+                  <div class="card-header state-header bg-warning"></div>
+                  <div class="card-body state-body">
+                    <div class="card-title state-title">   Email Subscriptions</div>
+                    <div class="card-text state-text">  Last Campaign Performance</div>
+                  </div>
+                  <div class="card-footer state-footer"><i class="far fa-clock"></i>   campaign sent 2 days ago</div>
+                </div>
+                <div class="card states-cards">
+                  <div class="card-header state-header bg-danger"></div>
+                  <div class="card-body state-body">
+                    <div class="card-title state-title">   Completed Tasks</div>
+                    <div class="card-text state-text">  Last Campaign Performance.</div>
+                  </div>
+                  <div class="card-footer state-footer"><i class="far fa-clock"></i>   campaign sent 2 days ago</div>
+                </div>
+              </div>
+            </div>
+            <div class="section-three">
+              <div class="tasks-section">
+                <div class="card states-cards">
+                  <div class="card-header state-header text-white">
+                    <ul class="list-unstyled tasks-list"><span>Tasks:</span>
+                      <li><a class="text-white active" href="#"><i class="fas fa-bug"></i>  Bugs</a></li>
+                      <li><a class="text-white" href="#"> <i class="fas fa-code"></i>  Website</a></li>
+                      <li><a class="text-white" href="#"> <i class="fas fa-cloud"></i>  Server</a></li>
+                    </ul>
+                  </div>
+                  <div class="card-body state-body">
+                    <ul class="list-unstyled check-list">
+                      <li>
+                        <input type="checkbox" checked="checked"/><span>  Sign contract for "What are conference organizers afraid of?"<span class="text-danger float-right"><i class="fas fa-pencil-alt mr-3"></i>  X</span></span>
+                      </li>
+                      <li>
+                        <input type="checkbox"/><span>  Lines From Great Russian Literature? Or E-mails From My Boss?<span class="text-danger float-right"><i class="fas fa-pencil-alt mr-3"></i>  X</span></span>
+                      </li>
+                      <li>
+                        <input type="checkbox"/><span>  Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit<span class="text-danger float-right"><i class="fas fa-pencil-alt mr-3"></i>  X</span></span>
+                      </li>
+                      <li>
+                        <input type="checkbox" checked="checked"/><span>  Create 4 Invisible User Experiences you Never Knew About<span class="text-danger float-right"><i class="fas fa-pencil-alt mr-3"></i>  X</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="employees-section">
+                <div class="card states-cards">
+                  <div class="card-header state-header bg-warning text-white">
+                    <h3>  Employees Stats</h3>
+                    <h5>  New employees on 18th November, 2020</h5>
+                  </div>
+                  <div class="card-body state-body">
+                    <table>
+                      <thead class="text-danger mb-5">
+                        <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Salary</th>
+                          <th scope="col">Country</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Dakota Rice</td>
+                          <td>$36,738</td>
+                          <td>Niger</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Minerva Hooper</td>
+                          <td>$23,789</td>
+                          <td>Curaçao</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Sage Rodriguez</td>
+                          <td>$56,142</td>
+                          <td>Netherlands</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Philip Chaney</td>
+                          <td>	$38,735</td>
+                          <td>Korea, South</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>Dakota Rice</td>
+                          <td>$36,738</td>
+                          <td>Niger</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
